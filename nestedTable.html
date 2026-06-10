@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table</title>
+</head>
+
+<body>
+    <h1><center>Nested Table Example</center></h1>
+    <table border="1" cellspacing="0" cellpadding="10" align="center">
+    <thead>
+        <tr>
+            <th>Roll NO.</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>01</td>
+        <td>Himanshu </td>
+        <td>80%</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">02</td>
+
+        <td>
+            Vanshika
+            <br><br>
+
+            <table border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Percentage</th>
+                </tr>
+
+                <tr>
+                    <td>M24-COA-201</td>
+                    <td>DataBase Management System</td>
+                    <td>90%</td>
+                </tr>
+
+                <tr>
+                    <td>M24-COA-202</td>
+                    <td>Artificial Intelligence</td>
+                    <td>85%</td>
+                </tr>
+
+                <tr>
+                    <td>M24-COA-203</td>
+                    <td>Machine Learning</td>
+                    <td>88%</td>
+                </tr>
+            </table>
+        </td>
+
+        <td rowspan="2">90%</td>
+    </tr>
+
+    <tr>
+        <td> </td>
+    </tr>
+
+    <tr>
+        <td>03</td>
+        <td>Rohan</td>
+        <td>65%</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
