@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+        <h2 align="center">Registration Form</h2>
+
+        <form method="post">
+
+            <table cellpadding="10" bgcolor="pink" align="center">
+                <tr>
+                    <td>First Name :</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Last Name :</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email :</td>
+                    <td>
+                        <input type="email" name="email" placeholder="Enter Email Address">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Password :</td>
+                    <td>
+                        <input type="password" name="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Other"> Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Age :</td>
+                    <td>
+                        <input type="number" name="age" min="1" max="100">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Preferences :</td>
+                    <td>
+                        <input type="checkbox" name="FE"> FrontEnd
+                        <input type="checkbox" name="BE"> BackEnd
+                        <input type="checkbox" name="FS"> Full Stack
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Occupation :</td>
+                    <td>
+                        <select name="occupation">
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Bio :</td>
+                    <td>
+                        <textarea rows="5" cols="30" placeholder="Share few lines about yourself..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="RESET">
+                        <input type="submit" value="SUBMIT">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+</body>
+</html>

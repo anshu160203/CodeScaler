@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="Fname">First Name</label>
+        <input type="text" value="vijay" id="Fname" placeholder="enter first name" name="Fname"><br><br>
+        <label for="Lname">Last Name</label>
+        <input type="text" id="Lname" placeholder="enter last name" name="Lname"><br><br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" value="male" id="male"><label for="male">Male</label>
+        <input type="radio" name="Gender" checked value="Female" id="female">
+        <label for="email">email</label>
+        <input type="email" name="email" placeholder="enter email"><br><br>
+        <label for="female">female</label><br>
+        <label>DOB</label>
+        <input type="date" name="DOB"><br><br>
+        <label>select Subject</label>
+        <input type="checkbox" value="English" checked name="subj1">English
+        <input type="checkbox" value="Hindi" name="subj2">Hindi
+        <input type="checkbox" value="Maths" name="subj3">Maths<br><br>
+        <label for="city">select city</label>
+        <select name="city" id="city">
+            <optgroup label="Hr">
+                <option value="Jin">Jind</option>
+                <option value="Roh">Rohtak</option>
+                <option value="His">Hisar</option>
+            </optgroup>
+            <optgroup label="pub">
+                <option value="Amrtiser">Amrtiser</option>
+                <option value="Bhatinda">Bhatinda</option>
+            </optgroup>
+
+        </select>
+
+        <label>upload photo</label>
+        <input type="file" name="photo" accept=".png, .jpg" multiple><br><br>
+        <label for="password">password</label>
+        <input type="password"><br>
+
+        <input type="hidden" name="userId" value="12345">
+
+        <input type="reset" value="Reset">
+
+        <input type="submit" value="Submit">
+
+        <input type="range" max="1000" min="100" value="300" name="range">
+
+        <label>upload doc</label>
+        <input type="file" multiple accept=".jpg, .pdf"><br><br>
+
+        <input type="color">
+
+        <input type="search" name="search" placeholder="search here"><br><br>
+
+        <br><br>
+        <label for="number">number</label>
+        <input type="number" id="number" name="number" min="1" max="100"><br><br>
+
+        <input type="url">
+
+        <input type="tel">
+
+        <button type="button">Save</button>
+    </form>
+
+
+</body>
+
+
+
+</html>
