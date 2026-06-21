@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <style>
+        .container{
+            width:100%;
+            background:pink;
+        }
+        .navbar{
+            display:flex;
+        }
+        .flex{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .nav-items ul{
+            display:flex;
+            list-style:none;
+            justify-content:space-between;
+            width:200px;
+            text-position: right;
+        }
+    </style>
+</head>
+<body>
+  <div class="container flex">
+    <div class="navbar flex">
+      <div class="nav-logo">
+        <h2>Cooking <i class="fas fa-bread-slice ms-1"></i></h2>
+      </div>      
+       <div class="nav-items flex">     
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

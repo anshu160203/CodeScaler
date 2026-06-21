@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:top;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.resume{
+    width:800px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.header{
+    background:#d8d8d8;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.header h1{
+    color:#555;
+    font-size:34px;
+    letter-spacing:2px;
+}
+
+.header p{
+    color:#777;
+    margin-top:5px;
+    font-size:14px;
+}
+
+.content{
+    display:flex;
+}
+
+.left{
+    width:35%;
+    background:#ececec;
+    padding:30px 25px;
+}
+
+.right{
+    width:65%;
+    padding:30px;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h3{
+    font-size:14px;
+    color:#555;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.section h4{
+    font-size:13px;
+    color:#444;
+    margin-top:10px;
+}
+
+.section span{
+    display:block;
+    font-size:12px;
+    color:#777;
+    margin:4px 0;
+}
+
+.section p{
+    font-size:12px;
+    color:#666;
+    line-height:1.6;
+}
+
+.section li{
+    font-size: 12px;
+    margin-left: 18px;
+    color: #666666;
+}
+.divider{
+    border-top:2px dashed #777;
+    margin:25px 0;
+}
+
+.contact p{
+    margin-bottom:10px;
+}
+
+.contact i{
+    width:20px;
+    color:#555;
+}
+
+@media(max-width:768px){
+    .content{
+        flex-direction:column;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .header h1{
+        font-size:24px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="resume">
+
+    <div class="header">
+        <h1>Himanshu Kumar</h1>
+        <p>Student</p>
+    </div>
+
+    <div class="content">
+
+        <!-- Left Side -->
+        <div class="left">
+
+            <div class="section">
+                <h3>PROFILE</h3>
+                <p>
+                    Master of Computer Application (MCA) student.
+                    I consider myself responsible and orderly person.
+                    I am looking forward to my first work experience.
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section contact">
+                <h3>CONTACT ME</h3>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    9350159198
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    himanshuk1602@gmail.com
+                </p>
+
+                <p>
+                    <i class="fas fa-location-dot"></i>
+                    00 VPO Bishanpura, Jind, Haryana
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+
+            <div class="section">
+                <h3>▶ WORK EXPERIENCE</h3>
+                <p>Fresher</p>
+            </div>
+
+            <div class="section">
+                <h3>▶ EDUCATION</h3>
+
+                <h4>CHAUDHARY RANBIR SINGH UNIVERSITY</h4>
+                <span>2025 - Present</span>
+                <p>Master of Computer Application (MCA), in progress.</p>
+
+                <h4>GOVT. COLLEGE BAHADURGARH</h4>
+                <span>2022 - 2025</span>
+                <p>Bachelor of Computer Application (BCA)</p>
+
+                <h4>GOPAL VIDYA MANDIR SR SEC SCHOOL</h4>
+                
+                <p>
+                    <ul>
+                        <li>
+                            12th with 72% in 2021.
+                        </li>
+                        <li>
+                            10th with 61% in 2019.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="section">
+                <h3>▶ LANGUAGE</h3>
+                <p>English.</p>
+                <p>Hindi.</p>
+            </div>
+
+            <div class="section">
+                <h3>▶ SKILLS</h3>
+                <p>Full Stack Developer</p>
+                
+            </div>
+
+            <div class="section">
+                <h3>▶ VOLUNTEER EXPERIENCE</h3>
+                <h4>INGOUDE COMPANY</h4>
+                <p>
+                    Participation in collections to distribute in
+                    low-income schools.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

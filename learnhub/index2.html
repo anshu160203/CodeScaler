@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            width: 100%;
+            border-bottom: 2px solid rgb(218, 211, 207);
+            height: 84px;
+            margin-top: 15px;
+        }
+
+        .navbar{
+            width: 70%;
+            margin: 0px auto;
+            height: 50px;
+        }
+        .nav-icon {
+            font-size: 30px;
+            color: #66ff01fd;
+            margin-left: 20px;
+        }
+        .nav-logo h2{
+            font-size: 32px;
+            margin-left: 20px;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-items ul li{
+            list-style: none;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .search-group input{
+            padding: 8px 15px;
+            border-radius: 30px 0 0 30px;
+            border-right: none;
+            border: 2px solid #eee;
+        }
+        .search-group form{
+            display: flex;
+            align-items: center;
+        }
+        .search-group i{
+            background-color: #67f30a66;
+            padding: 6px 13px;
+            color: #22e90c;
+            border-radius: 0px 30px 30px 0px;
+            font-size: 17px;
+            padding: 8px 10px;
+        }
+        .Home{
+            color: #66ff01fd;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar flex">
+            <div class="book-logo"><i class="fa-solid fa-book-open-reader"></i></div>
+            <div class="nav-logo">
+                <h2>Learn Hub </h2>
+            </div>
+            <div class="nav-items flex">
+                <ul class="flex">
+                    <li class="Home">Home</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                    <li>Login</li>
+                    <li>class</li>
+                </ul>
+                <div class="search-group">
+                    <form >
+                        <input type="search" placeholder="Enter keyword...">
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
