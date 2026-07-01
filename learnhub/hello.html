@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Imperial+Script&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto Slab", serif;
+        }
+
+        .btn {
+            font-size: 16px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 50px;
+        }
+
+        .text-primary {
+            color: #09c82c
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        .bg-primary {
+            background-color: #09c82c;
+        }
+
+        .bg-primary-light {
+            background-color: #f5fcf6;
+        }
+
+        .btn-border {
+            border: 2px solid #09c82c;
+            background-color: #09c82c1b;
+        }
+
+        .fs-1 {
+            font-size: 16px;
+        }
+
+        .fs-2 {
+            font-size: 24px;
+        }
+
+        .fs-3 {
+            font-size: 28px;
+        }
+
+        .fs-4 {
+            font-size: 32px;
+        }
+
+        .fs-5 {
+            font-size: 48px;
+        }
+
+        .py-4 {
+            padding: 8px 28px;
+        }
+
+        .mt-4 {
+            margin-top: 24px;
+        }
+
+        .active {
+            color: #09c82c !important;
+        }
+
+        .flex {
+            display: flex;
+            align-self: center;
+            justify-content: space-around;
+        }
+
+        .container {
+            width: 100%;
+            border-bottom: 2px solid gainsboro;
+            padding: 8px 0;
+        }
+
+        header {
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .line-height {
+            line-height: 50px;
+        }
+
+        .nav-item ul li {
+            list-style: none;
+            font-size: 200px;
+        }
+
+        .nav-item ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 400;
+            padding: 8px 16px;
+            font-size: 18px;
+        }
+
+        .nav-item ul li a:hover {
+            color: #09c82c;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .hero-section {
+            width: 90%;
+            margin: 0px auto;
+            padding: 8rem 0;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+        }
+
+        .video-content {
+            width: 700px;
+
+        }
+
+        .text-content {
+            width: 50%;
+        }
+
+        .text-content p {
+            font-size: 24px;
+        }
+
+        .justify-content-start {
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .flex-gap-4 {
+            gap: 30px;
+            justify-content: flex-start;
+        }
+
+        .video-content {
+            position: relative;
+        }
+
+        .video-content img {
+            border: 20px solid #fff;
+            border-radius: 2rem;
+
+        }
+
+        .user-like {
+            width: 200px;
+            height: 50px;
+            padding: 8px 12px;
+            border-radius: 50px;
+            background-color: antiquewhite;
+            position: absolute;
+
+        }
+
+        .user-like img {
+            width: 50px;
+            height: 50px;
+            border: none;
+            position: absolute;
+            border-radius: 50% !important;
+        }
+
+        .user-like .img1 {
+            top: 8px;
+            left: 10px;
+        }
+
+        .user-like .img2 {
+            top: 8px;
+            left: 48px;
+        }
+
+        .user-like .img3 {
+            top: 8px;
+            left: 76px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="flex line-height">
+                <div class="logo bold">
+                    <i class="fa-solid fa-book-open text-primary"></i>LearnHub
+                </div>
+                <div class="nav-item">
+                    <ul class="flex">
+                        <li><a href="#Home" class="active">Home</a></li>
+                        <li><a href="#Home">Course</a></li>
+                        <li><a href="#Home">Mentor</a></li>
+                        <li><a href="#Home">Group</a></li>
+                        <li><a href="#Home">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="get-start">
+                    <button class="btn bg-primary text-white ">Get Started</button>
+                </div>
+
+            </nav>
+        </header>
+
+    </div>
+    <div class="container bg-primary-light">
+        <section>
+            <div class="hero-section flex">
+                <div class="text-content">
+                    <button class="btn btn-border text-primary py-4">
+                        <ul>
+                            <li>New Courses Available</li>
+                        </ul>
+                    </button>
+                    <h1 class="fs-5">Master New Skills <br> <span class="text-primary">Online Anytime, <br> </span>
+                        Anywhere
+                    </h1>
+                    <div class="mt-4">
+                        <p>
+                            Join over 50,000+ students learning from world-class mentors. Transform your career with
+                            industry-leading
+                            courses.
+                        </p>
+                        <div class="flex mt-4 justify-content-start">
+                            <button class="btn bg-primary text-white py-4">Start Learning</button>
+                            <button class="btn">YouTube Channel</button>
+                        </div>
+                        <div class="rating flex mt-4 flex-gap-4">
+                            <span><i class="fa-solid fa-users-between-lines text-primary"></i> <span
+                                    class="bold">50K+</span>Students</span>
+                            <span>200+ Courses
+                            </span>
+                            <span>4.9 Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <div class="user-like flex">
+
+                        <div class="image-group flex">
+                            <img class="img1" src="https://themewagon.github.io/learnhub/assets/images/avatar-1.jpg"
+                                alt="" width="100%">
+                            <img class="img2" src="https://themewagon.github.io/learnhub/assets/images/avatar-2.jpg"
+                                alt="" width="100%">
+                            <img class="img3" src="https://themewagon.github.io/learnhub/assets/images/avatar-3.jpg"
+                                alt="" width="100%">
+                        </div>
+                        <div class="rating-no flex" style="flex-direction: column; padding-left: 70px;">
+                            <b>Join 50+</b>
+                            <span>Students</span>
+                        </div>
+
+                    </div>
+                    <img src="assets/images/hero-img.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

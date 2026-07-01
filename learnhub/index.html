@@ -1,14 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+        integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto Slab", serif;
+        }
+
+
+        /* Nav Bar styling*/
+        .container {
+            /*whole container*/
+            width: 100%;
+            border-bottom: 2px solid gainsboro;
+            padding: 8px 20px;
+        }
+
+        header {
+            width: 90%;
+            padding: 0px auto;
+        }
+
+        .flex {
+            /* whole nav bar style*/
+            display: flex;
+            /* horizontal to vertical*/
+            align-self: center;  
+            justify-content: space-around;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .logo {
+            font-size: 19.5px;
+        }
+
+        .line-height {
+            line-height: 50px;
+        }
+
+        .nav-item ul li {
+            list-style: none;
+            /* to remove bullets*/
+            font-size: 15.6px;
+            color: #000000A6;
+        }
+
+        .nav-item ul li a {
+            /*list items decoration*/
+            text-decoration: none;
+            font-weight: 400;
+            padding: 8px 16px;
+            font-size: 18px;
+        }
+
+        .nav-item ul li:hover {
+            color: #09c82c;
+        }
+
+        .gtStart {
+            border-radius: 30px;
+            padding: 12px;
+            width: 150px;
+            font-size: 15px;
+            background-color: #09C82C;
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+
+        .text-primary {
+            color: #09c82c;
+            padding-right: 4px;
+
+        }
+
+        .text-white {
+            color: #fff;
+        }
+
+        /*Remaining Content styling*/
+
+        .hero-text h1 {
+            /* margin-top: 12%; */
+            margin-left: 8%;
+            font-size: 51.14px;
+        }
+        .hero-section {
+            width: 90%;
+            margin: 0px auto;
+            padding: 1rem 0;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+
+        }
+
+        /* .hero-text span {
+            color: #09c82c;
+        } */
+        .ol-1 {
+            color: #09c82c;
+        }
+
+        .coursebtn {
+            margin: 9% 0px 0px 8%;
+            width: 14em;
+            background: #09c82c1a;
+            color: #09c82c;
+            border: 1px solid #09c82c;
+            display: inline-flex;
+            padding-left: 39px;
+        }
+
+        .mt-1 {
+            margin: 2em 0em 0em 7em;
+        }
+
+        .mt-2 {
+            background: hsl(0, 11%, 93%);
+            color: #525252;
+            width: 12em;
+        }
+
+        .mt-3 {
+            margin-left: 8%;
+            padding: 1em 1em 0em 0em;
+            gap: 8px;
+            justify-content: flex-start;
+        }
+
+        .logo-1 {
+            margin-left: 9px;
+            font-size: 10px;
+        }
+
+        .logo-2 {
+            color: #09c82c;
+        }
+
+        /* .video-content {
+            width: 700px;
+
+        } */
+
+        /* .text-content {
+            width: 50%;
+        } */
+
+        /* .text-content p {
+            font-size: 24px;
+        } */
+
+        /* .justify-content-start {
+            justify-content: flex-start;
+            gap: 20px;
+        } */
+
+        /* .flex-gap-4 {
+            gap: 30px;
+            justify-content: flex-start;
+        } */
+
+        /* .video-content {
+            position: relative;
+        } */
+
+        .video-content img {
+            border: 20px solid #fff;
+            border-radius: 2rem;
+
+        }
+        /* small pictures css*/
+        .user-like {
+            width: 200px;
+            height: 50px;
+            padding: 8px 12px;
+            border-radius: 50px;
+            background-color: antiquewhite;
+            position: absolute;
+
+        }
+
+        .user-like img {
+            width: 50px;
+            height: 50px;
+            border: none;
+            position: absolute;
+            border-radius: 50% !important;
+        }
         
+        .user-like .img1 {
+            top: 8px;
+            left: 10px;
+        }
+
+        .user-like .img2 {
+            top: 8px;
+            left: 48px;
+        }
+
+        .user-like .img3 {
+            top: 8px;
+            left: 76px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <header>
+            <nav class="flex line-height">
+                <div class="logo bold"><i class="fa-solid fa-book-open text-primary"></i>LearnHub</div>
+                <div class="nav-item">
+                    <ul class="flex">
+                        <li><a href="#Home"></a>Home</li>
+                        <li><a href="#Courses"></a>Courses</li>
+                        <li><a href="#Mentor"></a>Mentor</li>
+                        <li><a href="#Group"></a>Group</li>
+                        <li><a href="#Testimonials"></a>Testimonials</li>
+                        <li><a href="#Pricing"></a>Pricing</li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button class="gtStart">Get Started</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="hero-section">
+            <div class="hero-text">
+                <button class="gtStart coursebtn">
+                    <ul>
+                        <li>New Courses Available</li>
+                    </ul>
+                </button>
+                <h1> Master New Skills <br> <span class="ol-1">Online Anytime,</span><br> Anywhere</h1>
+                <div class="mt-1">
+                    <p>Join over 50,000+ students learning from world-class mentors. <br>Transform your career with
+                        industry-leading courses</p>
+                </div>
+                <div>
+                    <button class="gtStart mt-1">Start Learning<i class="fa-solid fa-arrow-right logo-1"></i></button>
+                    <button class="gtStart mt-2"><i class="fa-brands fa-youtube"></i>YouTube Channel</button>
+                </div>
+                <div class=" flex mt-3">
+                    <!-- <div class="ratings mt-1"><i class="fa-regular fa-user text-primary"></i><span class="bold">50K+</span>Students</div>
+                <div class="ratings mt-1"><i class="fa-solid fa-book-open text-primary"></i>200+ Courses</div>
+                <div class="ratings mt-1"><i class="fa-solid fa-award text-primary"></i>4.9 Rating</div> -->
+                    <span class="bold"><i class="fa-regular fa-user text-primary"></i>50K+</span><span>Students</span>
+                    <span class="bold"><i class="fa-solid fa-book-open text-primary"></i>200+</span><span>Courses</span>
+                    <span class="bold"><i class="fa-solid fa-award text-primary"></i>4.9</span><span>Rating</span>
+                </div>
+            </div>
+            
+                <div class="video-content">
+                    <div class="user-like flex">
+
+                        <div class="image-group flex">
+                            <img class="img1" src="https://themewagon.github.io/learnhub/assets/images/avatar-1.jpg"
+                                alt="" width="100%">
+                            <img class="img2" src="https://themewagon.github.io/learnhub/assets/images/avatar-2.jpg"
+                                alt="" width="100%">
+                            <img class="img3" src="https://themewagon.github.io/learnhub/assets/images/avatar-3.jpg"
+                                alt="" width="100%">
+                        </div>
+                        <div class="rating-no flex" style="flex-direction: column; padding-left: 70px;">
+                            <b>Join 50+</b>
+                            <span>Students</span>
+                        </div>
+
+                    </div>
+                    <img src="/assets/study.jpg" alt="" width="420" height="420">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
