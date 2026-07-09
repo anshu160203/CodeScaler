@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form class="border border-3 rounded border-primary p-3" name="myform" onsubmit=" return save()">
+            <h2 class="text-center my-3">Student Form</h2>
+            <div class="row">
+                <div class="col-lg-6 my-2">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between px-3">
+                            <label for="FirstName">First Name</label><span class="error"></span>
+                        </div>
+                        <input type="text" name="FName" id="FirstName" class="form-control"
+                            oninput="clearSingleError(this,0)">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between px-3">
+                            <label for="FirstName">Last Name</label> <span class="error"></span>
+                        </div>
+                        <input type="text" name="LName" id="LastName" class="form-control"
+                            oninput="clearSingleError(this,1)">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between px-3">
+                            <label for="FirstName">Father Name</label><span class="error"></span>
+                        </div>
+                        <input type="text" name="FatherName" id="FatherNam" class="form-control"
+                            oninput="clearSingleError(this,2)">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between px-3">
+                            <label for="FirstName">Mother Name</label><span class="error"></span>
+                        </div>
+                        <input type="text" name="MotherName" id="MotherNam" class="form-control"
+                            oninput="clearSingleError(this,3)">
+                    </div>
+                </div>
+                <div class="col-lg-12 my-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">save</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const error = document.getElementsByClassName("error")
+        function save() {
+
+            let validate = true
+            const myform = document.forms["myform"]
+            clearerror()
+
+            if (myform.FName.value == "" || myform.FName.value.length < 4) {
+                error[0].innerHTML = "Plz fill the name"
+                validate = false
+            }
+
+            if (myform.LName.value == "" || myform.LName.value.length < 4) {
+                error[1].innerHTML = "Plz fill the name"
+                validate = false
+            }
+
+            if (myform.FatherName.value == "" || myform.FatherName.value.length < 4) {
+                error[2].innerHTML = "Plz fill the name"
+                validate = false
+            }
+
+            if (myform.MotherName.value == "" || myform.MotherName.value.length < 4) {
+                error[3].innerHTML = "Plz fill the name"
+                validate = false
+            }
+            return validate
+        }
+
+        function clearerror() {
+            for (let i of error) {
+                console.log(i);
+
+                i.innerHTML = " ";
+            }
+        }
+
+        function clearSingleError(input,index) {
+            if (input.value.trim().length >= 4) {
+                error[index].innerHTML = "";
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>
